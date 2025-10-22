@@ -1,0 +1,203 @@
+/* ESP8266 LED Control - Stylesheet (No JavaScript Version) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 600px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    text-align: center;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.led-section {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.led-section:hover {
+    transform: translateY(-5px);
+}
+
+.status {
+    font-size: 1.3em;
+    text-align: center;
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.status span {
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.on {
+    color: #4ade80;
+    text-shadow: 0 0 10px #4ade80;
+    background: rgba(74, 222, 128, 0.2);
+}
+
+.off {
+    color: #ef4444;
+    text-shadow: 0 0 10px #ef4444;
+    background: rgba(239, 68, 68, 0.2);
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Remove default link styling */
+a {
+    text-decoration: none;
+}
+
+button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    min-width: 120px;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.btn-on {
+    background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+}
+
+.btn-on:hover {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+}
+
+.btn-off {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.btn-off:hover {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+}
+
+.btn-both {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: #000;
+}
+
+.btn-both:hover {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.divider {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 30px 0;
+}
+
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer strong {
+    color: #fbbf24;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 25px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.1em;
+    }
+    
+    button {
+        padding: 12px 20px;
+        font-size: 1em;
+        min-width: 100px;
+    }
+}
+
+/* Page transition effect */
+body {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP8266 LED Control</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>ESP8266 LED Control</h1>
+        <h2>Wireless Access Point Mode</h2>
+
+        <!-- LED 1 Section -->
+        <div class="led-section">
+            <h3>💡 LED 1</h3>
+            <p class="status">Status: <span id="led1-status" class="off">OFF ✗</span></p>
+            <div class="button-group">
+                <button class="btn-on" onclick="controlLED(1, 'on')">Turn ON</button>
+                <button class="btn-off" onclick="controlLED(1, 'off')">Turn OFF</button>
+            </div>
+        </div>
+
+        <!-- LED 2 Section -->
+        <div class="led-section">
+            <h3>💡 LED 2</h3>
+            <p class="status">Status: <span id="led2-status" class="off">OFF ✗</span></p>
+            <div class="button-group">
+                <button class="btn-on" onclick="controlLED(2, 'on')">Turn ON</button>
+                <button class="btn-off" onclick="controlLED(2, 'off')">Turn OFF</button>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Both LEDs Control -->
+        <div class="led-section">
+            <h3>⚡ Both LEDs</h3>
+            <div class="button-group">
+                <button class="btn-both" onclick="controlBoth('on')">Turn Both ON</button>
+                <button class="btn-both" onclick="controlBoth('off')">Turn Both OFF</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Connected to: <strong>Walid's ESP8266</strong></p>
+            <p>IP Address: <strong>192.168.1.1</strong></p>
+        </div>
+    </div>
+</body>
+
+</html>
