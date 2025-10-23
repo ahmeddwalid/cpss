@@ -4,7 +4,7 @@
 
 This project implements a wireless LED control system using ESP8266 NodeMCU operating in Access Point (AP) mode. The system creates its own WiFi network and hosts a web server that allows users to control two LEDs through a responsive web interface.
 
-![webpage.png](./Assignment%201/ESP8266%20AP%20LED%20Control/assets/screenshots/webpage.png)
+![webpage.png](./assets/screenshots/webpage.png)
 
 ## Hardware
 
